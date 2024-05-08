@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Rouge+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <title>Login | Instagram</title>
+    <style>
+      body {
+        padding: 35px 30px 60px 0;
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+      }
+      #bg-img-section {
+        background-image: url("instagram-ui.png");
+        width: 504px;
+        background-repeat: no-repeat;
+        background-size: 469.32px 634.59px;
+        margin-right: 0px;
+      }
+      a {
+        text-decoration: none;
+      }
+      input,
+      button {
+        font-family: "Segoe UI", Arial, sans-serif;
+      }
+      main {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 0px;
+      }
+      footer a,
+      span,
+      select {
+        text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        font-size: 12px;
+        color: #737373;
+      }
+      footer a {
+        text-decoration: none;
+      }
+      .links-space {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 18px;
+      }
+      .outer-border {
+        width: 350px;
+        text-align: center;
+        border: 1px solid #dbdbdb;
+      }
+      .app-img {
+        height: 40px;
+      }
+      h1 {
+        margin: 45px 0 40px 0;
+        font-family: "Lobster", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 40px;
+        color: #262626;
+      }
+      hr {
+        width: 100%;
+        margin: 10px 0px 0 0px;
+        border-width: 0;
+        border-top: 1px solid #dbdbdb;
+      }
+      button {
+        background-color: rgba(0, 149, 246);
+        opacity: 0.7;
+        width: 268px;
+        height: 32px;
+        color: #fff;
+        font-weight: 600;
+        border: none;
+        border-radius: 8px;
+      }
+      .bg-input {
+        background-color: #fafafa;
+        font-size: 12px;
+        height: 20px;
+        padding: 9px 0 7px 8px;
+        width: 258px;
+        color: #000000;
+        border: 1px solid #dbdbdb;
+      }
+      input:focus {
+        outline: none;
+      }
+      #image-box {
+        width: 250px;
+        height: 541px;
+        float: right;
+        margin-top: 27px;
+        margin-right: 96px;
+        background-color: #000;
+        background-repeat: no-repeat;
+        animation-name: image-animation;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes image-animation {
+        0% {
+          background-image: url("instagram-home.png");
+        }
+        30% {
+          background-image: url("instagram-chats.png");
+        }
+        70% {
+          background-image: url("instagram-profile.png");
+        }
+        100% {
+          background-image: url("instagram-uploads.png");
+        }
+      }
+      @media screen and (max-width: 875px) {
+        #bg-img-section {
+          display: none;
+        }
+        section:nth-child(2) {
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section id="bg-img-section">
+        <div id="image-box"></div>
+      </section>
+      <section style="margin-left: -30px; margin-right: 8px">
+        <div class="outer-border" style="margin-top: 9px; margin-left: -8px">
+          <form action="">
+            <h1>Instagram</h1>
+            <input
+              class="bg-input"
+              type="text"
+              placeholder="Phone number, username, or email"
+            />
+            <br />
+            <input
+              style="margin: 8px 0px 15px 0"
+              class="bg-input"
+              type="password"
+              placeholder="Password"
+            />
+            <br />
+            <button type="submit">Log in</button>
+
+            <div
+              style="
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                margin: 20px 40px 30px 40px;
+              "
+            >
+              <hr />
+              <span
+                style="font-size: 13px; font-weight: 600; margin: 0 20px 0 20px"
+                >OR</span
+              >
+              <hr />
+            </div>
+            <a
+              href="#"
+              style="color: #385185; font-weight: 600; font-size: 14px"
+              ><img
+                style="width: 22px; margin-bottom: -7px"
+                src="facebook.svg"
+                alt=""
+              />&nbsp;Log in with Facebook</a
+            >
+            <br />
+            <br />
+            <a href="#" style="font-size: 12px; color: #00376b"
+              >Forgot password?</a
+            >
+            <br />
+            <br />
+          </form>
+        </div>
+        <div class="outer-border" style="margin-top: 10px; margin-left: -8px">
+          <br />
+          <label for="" style="color: #000; font-size: 14px"
+            >Don't have an account?<a
+              href="#"
+              style="color: #0095f6; font-weight: 600"
+            >
+              Sign up</a
+            ></label
+          >
+          <br />
+          <br />
+        </div>
+        <div style="text-align: center; font-size: 14px">
+          <p>Get the app.</p>
+          <img
+            style="margin: 0"
+            class="app-img"
+            src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png"
+            alt="Google Play Store"
+          />
+          <img
+            style="margin: 0 0px 0 5px"
+            class="app-img"
+            src="https://static.cdninstagram.com/rsrc.php/v3/yu/r/EHY6QnZYdNX.png"
+            alt="Microsoft Store"
+          />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="links-space" style="margin-top: 55px">
+        <a href="#">Meta</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Jobs</a>
+        <a href="#">Help</a>
+        <a href="#">API</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Locations</a>
+        <a href="#">Instagram Lite</a>
+        <a href="#">Threads</a>
+        <a href="#">Contact Uploading & Non-Users</a>
+        <a href="#">Meta Verified</a>
+      </div>
+      <div class="links-space" style="margin-top: 20px">
+        <select style="border: none" aria-label="Switch Display Language">
+          <option value="af">Afrikaans</option>
+          <option value="ar">العربية</option>
+          <option value="cs">Čeština</option>
+          <option value="da">Dansk</option>
+          <option value="de">Deutsch</option>
+          <option value="el">Ελληνικά</option>
+          <option value="en">English</option>
+          <option value="en-gb">English (UK)</option>
+          <option value="es">Español (España)</option>
+          <option value="es-la">Español</option>
+          <option value="fa">فارسی</option>
+          <option value="fi">Suomi</option>
+          <option value="fr">Français</option>
+          <option value="he">עברית</option>
+          <option value="id">Bahasa Indonesia</option>
+          <option value="it">Italiano</option>
+          <option value="ja">日本語</option>
+          <option value="ko">한국어</option>
+          <option value="ms">Bahasa Melayu</option>
+          <option value="nb">Norsk</option>
+          <option value="nl">Nederlands</option>
+          <option value="pl">Polski</option>
+          <option value="pt-br">Português (Brasil)</option>
+          <option value="pt">Português (Portugal)</option>
+          <option value="ru">Русский</option>
+          <option value="sv">Svenska</option>
+          <option value="th">ภาษาไทย</option>
+          <option value="tl">Filipino</option>
+          <option value="tr">Türkçe</option>
+          <option value="zh-cn">中文(简体)</option>
+          <option value="zh-tw">中文(台灣)</option>
+          <option value="bn">বাংলা</option>
+          <option value="gu">ગુજરાતી</option>
+          <option value="hi">हिन्दी</option>
+          <option value="hr">Hrvatski</option>
+          <option value="hu">Magyar</option>
+          <option value="kn">ಕನ್ನಡ</option>
+          <option value="ml">മലയാളം</option>
+          <option value="mr">मराठी</option>
+          <option value="ne">नेपाली</option>
+          <option value="pa">ਪੰਜਾਬੀ</option>
+          <option value="si">සිංහල</option>
+          <option value="sk">Slovenčina</option>
+          <option value="ta">தமிழ்</option>
+          <option value="te">తెలుగు</option>
+          <option value="ur">اردو</option>
+          <option value="vi">Tiếng Việt</option>
+          <option value="zh-hk">中文(香港)</option>
+          <option value="bg">Български</option>
+          <option value="fr-ca">Français (Canada)</option>
+          <option value="ro">Română</option>
+          <option value="sr">Српски</option>
+          <option value="uk">Українська</option>
+        </select>
+        <span>&copy; 2024 Instagram from Meta</span>
+      </div>
+    </footer>
+  </body>
+</html>
